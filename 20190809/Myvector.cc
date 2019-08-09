@@ -15,7 +15,12 @@ public:
     {}
     ~Myvector()
     {
-        if()
+        if(_start){
+        while(_finish!=_start)
+            _alloc.destroy(--_finish);
+
+            _alloc.deallocate(_start,capacity());
+        }
     }
 
     size_t size() const 
@@ -52,6 +57,8 @@ private:
     T * _end_of_storage;
 };
 
+template <class T>
+std::allocator<T> Myvector<T>::_alloc;
 template < class T>
 void Myvector<T>::push_back(const T & value)
 {
@@ -68,7 +75,7 @@ void Myvector<T>::pop_back()
 {
     if(size()>0)
     {
-        _alloc.destroy(--finish);
+        _alloc.destroy(--_finish);
     }
 }
 
