@@ -122,5 +122,9 @@ int main(void)
 {
     Myvector<int> numbers;
     showCapacity(numbers);
+    numbers.push_back(1);
+    showCapacity(numbers);
+    numbers.push_back(1);
+    showCapacity(numbers);
     return 0;
 }
