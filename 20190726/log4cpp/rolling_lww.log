@@ -1,0 +1,12 @@
+2019-07-26 06:41:44,341 mycategory [ALERT] 48 this is alter message
+2019-07-26 06:41:44,342 mycategory [CRIT] 48 this is crit message
+2019-07-26 06:41:44,342 mycategory [ERROR] 48 this is error message
+2019-07-26 06:41:44,342 mycategory [WARN] 48 this is warn message
+2019-07-26 06:41:44,342 mycategory [INFO] 48 this is info message
+2019-07-26 06:41:44,342 mycategory [NOTICE] 48 this is notice message
+2019-07-26 06:41:44,342 mycategory [ALERT] 49 this is alter message
+2019-07-26 06:41:44,342 mycategory [CRIT] 49 this is crit message
+2019-07-26 06:41:44,342 mycategory [ERROR] 49 this is error message
+2019-07-26 06:41:44,342 mycategory [WARN] 49 this is warn message
+2019-07-26 06:41:44,342 mycategory [INFO] 49 this is info message
+2019-07-26 06:41:44,342 mycategory [NOTICE] 49 this is notice message
