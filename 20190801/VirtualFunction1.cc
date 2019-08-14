@@ -94,13 +94,14 @@ private:
 	long _derived2;
 };
 
-void print(Base * base)
+void print(Base * base)//指针
 {
 	base->print();
 	//base->print(1);//error
+	//前提条件：base内部要有print(int)函数才行
 }
 
-void print(Base & ref)
+void print(Base & ref)//基类的引用
 {
 	ref.print();
 }

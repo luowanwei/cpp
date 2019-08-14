@@ -8,7 +8,7 @@
 using std::cout;
 using std::endl;
 
-class Base
+class Base//通过对象的方式来进行调用
 {
 public:
 	//virtual //构造函数不能设计成虚函数

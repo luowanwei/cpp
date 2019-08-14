@@ -63,8 +63,9 @@ int main(void)
 	//weak_ptr知道所托管的资源是否还存在，
 	//weak_ptr不能直接访问资源的
 	cout << "\nwp's expired = " << wp.expired() << endl;
+	//expired()的功能等价于use_count()==0,但更快，表示被观测的资源(也就是shared_ptr的管理的资源)已经不复存在
 
-	shared_ptr<Point> sp2 = wp.lock();
+	shared_ptr<Point> sp2 = wp.lock();//资源外提升失败
 	//shared_ptr<Point> sp3;
 	cout << "sp2's use_count = " << sp2.use_count() << endl;
 	if(sp2) {
